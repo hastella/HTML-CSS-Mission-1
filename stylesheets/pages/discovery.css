@@ -1,0 +1,60 @@
+/* CSS 작성 */
+
+/* header */
+h1 img {
+  width: 176px;
+  height: 40px;
+}
+/* section */
+.heading {
+  display: inline-flex;
+  text-align: center;
+  margin-bottom: 24px;
+}
+h2 {
+  font-weight: 500;
+  height: 28px;
+}
+.divider {
+  height: 20px;
+  color: #aaa9a9;
+  padding: 0 10px;
+}
+h4 {
+  color: #aaa9a9;
+  height: 18px;
+}
+
+/* product section */
+.container {
+  width: 1020px;
+  height: 958px;
+}
+.row {
+  height: 310px;
+  margin-bottom: 16px;
+}
+[class^="col-"] {
+  float: left;
+  height: 310px;
+  border: 1px solid #c4c4c4;
+  background: #ffffff;
+}
+.col-1-of-2 {
+  width: 502px;
+}
+.col-1-of-2 img {
+  margin: 18px 26px;
+}
+.col-1-of-2:not(:last-child) {
+  margin-right: 16px;
+}
+.col-1-of-4 {
+  width: 243px;
+}
+.col-1-of-4 img {
+  margin: 12px 19px;
+}
+.col-1-of-4:not(:last-child) {
+  margin-right: 16px;
+}
