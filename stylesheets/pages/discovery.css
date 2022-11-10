@@ -46,22 +46,31 @@ h4 {
   height: 310px;
   border: 1px solid #c4c4c4;
   background: #ffffff;
+  padding: 21px;
+}
+[class^="col-"] button {
+  position: absolute;
+  top: 300px;
+  display: flex;
+  justify-content: flex-start;
+  width: 42px;
+  height: 42px;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+button > svg {
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  background: #f3f3f3;
 }
 .col-1-of-2 {
   width: 502px;
 }
-.col-1-of-2 img {
-  margin: 18px 26px;
-}
-.col-1-of-2:not(:last-child) {
-  margin-right: 16px;
-}
 .col-1-of-4 {
   width: 243px;
 }
-.col-1-of-4 img {
-  margin: 12px 19px;
-}
+.col-1-of-2:not(:last-child),
 .col-1-of-4:not(:last-child) {
   margin-right: 16px;
 }
