@@ -15,6 +15,7 @@ h1 img {
   gap: 10px;
   margin-bottom: 24px;
 }
+
 h2 {
   font-weight: 500;
   width: auto;
@@ -34,7 +35,6 @@ h4 {
 
 /* product section */
 .container {
-  width: 1020px;
   height: 958px;
 }
 .row {
@@ -49,26 +49,47 @@ h4 {
   padding: 21px;
 }
 [class^="col-"] button {
-  position: absolute;
-  top: 300px;
-  display: flex;
-  justify-content: flex-start;
+  position: relative;
   width: 42px;
   height: 42px;
-  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-start;
   border: none;
+  background: rgba(0, 0, 0, 0.2) url(/assets/icon/angle-right-square.svg);
 }
-button > svg {
-  position: absolute;
-  width: 6px;
-  height: 10px;
-  background: #f3f3f3;
+[class^="col-"]:hover {
+  border: 1px solid #0074e9;
+}
+[class^="col-"]:hover button,
+:focus button {
+  width: 112px;
+  height: 42px;
+  transition: 200ms ease-out;
+  background: #0074e9 url(/assets/icon/angle-right-square.svg) no-repeat right;
+}
+[class^="col-"]:hover button::after,
+:focus button::after {
+  content: "구매하기";
+  font-weight: 500;
+  font-size: 14px;
+  margin: 9px auto auto 16px;
+  white-space: nowrap;
+  color: #fff;
 }
 .col-1-of-2 {
   width: 502px;
 }
+.col-1-of-2 button {
+  bottom: 50px;
+}
 .col-1-of-4 {
   width: 243px;
+}
+.col-1-of-4 button {
+  bottom: 61px;
+}
+.custom-position {
+  top: -7px;
 }
 .col-1-of-2:not(:last-child),
 .col-1-of-4:not(:last-child) {
